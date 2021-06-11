@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Merriweather", sans-serif;
+    background-color: #ebf2ff;
+    overflow-x: hidden;
+}
+
+.button__primary{
+    background-image: linear-gradient(
+    to right,
+    #ff512f 0%,
+    #dd2476 51%,
+    #ff512f 100%
+  );
+
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar__brand{
+    width: 100px;
+}
+
+.navbar__logo{
+    width: 100%;
+}
+
+
+
+@media  (min-width: 768px) {
+    .navbar{
+        justify-content: space-between;
+        padding: 10px 20px;
+    }
+    .navbar__brand{
+        width: 150px;
+        }
+     .button__primary{
+        {
+        padding: 20px;
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 1020px) {
+    .navbar{
+        justify-content: space-between;
+        padding: 10px 20px;
+    }
+
+    .navbar__brand{
+    width: 250px;
+    }
+
+    .button__primary{
+        padding: 20px;
+        font-size: 20px;
+    }
+}
+
